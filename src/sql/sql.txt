@@ -1,0 +1,18 @@
+
+
+
+		 CREATE TABLE IF NOT EXISTS vbSequencer(
+		 table_name varchar(50),
+		 next_id bigint(18),
+		 table_LastModificationTime bigint(18) default 0
+		 ) engine=MyISAM;
+
+		  CREATE TABLE IF NOT EXISTS vbMediationDetails (
+		   mdID int, 
+		  mdExperimentNo INT ,
+		  mdScopID VARCHAR(10) NOT NULL, 
+		  mdProcessingStartTime bigint,
+		  mdProcessingEndTime bigint, 
+		  PRIMARY KEY (mdID) 
+		  ) engine=MyISAM;
+		 
